@@ -94,10 +94,8 @@ WSGI_APPLICATION = 'charativeproject.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-
 }
 
-DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
 # Password validation
