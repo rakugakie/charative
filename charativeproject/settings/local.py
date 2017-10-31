@@ -138,7 +138,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = str(ROOT_DIR.path('static'))
 
 STATICFILES_DIRS = [
-    str(ROOT_DIR.path('static')),
+    '',
 ]
 
 STATICFILES_FINDERS = [
