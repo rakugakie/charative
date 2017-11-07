@@ -7,7 +7,7 @@ ROOT_DIR = environ.Path(__file__) - 1
 
 if __name__ == "__main__":
 
-    if os.path.isfile('.env'):
+    if os.path.isfile('charativeproject/settings/local.py'):
         env = environ.Env(DEBUG=(bool, False), )
         env_file = str(ROOT_DIR.path('.env'))
         print('Loading : {}'.format(env_file))
