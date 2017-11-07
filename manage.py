@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 import os
 import sys
+import environ
 
+ROOT_DIR = environ.Path(__file__) - 1
 
 if __name__ == "__main__":
 
-    ROOT_DIR = os.environ.Path(__file__) - 3
-    env = os.environ.Env(DEBUG=(bool, False), )
+    env = environ.Env(DEBUG=(bool, False), )
 
     READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=True)
 
