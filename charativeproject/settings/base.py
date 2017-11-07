@@ -30,6 +30,7 @@ if READ_DOT_ENV_FILE:
     print('The .env file has been loaded. See base.py for more information')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = ROOT_DIR()
 
@@ -137,7 +138,7 @@ STATIC_ROOT = str(ROOT_DIR.path('static'))
 print(STATIC_ROOT)
 
 STATICFILES_DIRS = [
-    'Q:\Projects\charative\static\images',
+
 ]
 
 STATICFILES_FINDERS = [
