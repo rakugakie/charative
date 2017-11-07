@@ -143,7 +143,7 @@ STATIC_ROOT = str(ROOT_DIR.path('static'))
 print(STATIC_ROOT)
 
 STATICFILES_DIRS = [
-
+    'Q:\Projects\charative\static\images',
 ]
 
 STATICFILES_FINDERS = [

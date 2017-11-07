@@ -7,14 +7,8 @@ ROOT_DIR = environ.Path(__file__) - 1
 
 if __name__ == "__main__":
 
-    env = environ.Env(DEBUG=(bool, False), )
-
-    READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=True)
-
-    if READ_DOT_ENV_FILE:
-        # Operating System Environment variables have precedence over variables defined in the .env file,
-        # that is to say variables from the .env files will only be used if not defined
-        # as environment variables.
+    if os.path.isfile('.env'):
+        env = environ.Env(DEBUG=(bool, False), )
         env_file = str(ROOT_DIR.path('.env'))
         print('Loading : {}'.format(env_file))
         env.read_env(env_file)
