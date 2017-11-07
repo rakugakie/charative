@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from charative.models import Chara
+
+admin.site.register(Chara)

@@ -8,6 +8,11 @@
 <body>
     <h5>Konnichiha!</h5>
     Hello, starshine! The world says hello!
+    {% if poop.picture %}
+        <p> Site Owner's face: <img src="{{ poop.picture.url }}"> </p>
+    {% else %}
+        <p> Site Owner: {{ poop.name }}</p>
+    {% endif %}
 <img src="{% static 'images/goat.jpg' %}">
 </body>
 </html>
