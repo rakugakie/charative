@@ -14,4 +14,6 @@ ALLOWED_HOSTS = [
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
+    'default': env.db(), # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
 }
+

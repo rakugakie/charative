@@ -41,6 +41,7 @@ BASE_DIR = ROOT_DIR()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = [
     'charative.herokuapp.com',
@@ -90,13 +91,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'charativeproject.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
-DATABASES = {
-}
 
 
 
