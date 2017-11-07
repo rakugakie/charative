@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from charative.models import Chara
-from charativeproject.settings.local import BASE_DIR
 
 # Create your views here.
 
