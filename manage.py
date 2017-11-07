@@ -10,7 +10,7 @@ if __name__ == "__main__":
     if os.path.isfile('charativeproject/settings/local.py'):
         env = environ.Env(DEBUG=(bool, False), )
         env_file = str(ROOT_DIR.path('.env'))
-        print('Loading : {}'.format(env_file))
+        print('Loading from manage.py : {}'.format(env_file))
         env.read_env(env_file)
         print('The .env file has been loaded from manage.py. See base.py for more information')
 
