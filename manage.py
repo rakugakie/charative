@@ -2,7 +2,10 @@
 import os
 import sys
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'charativeproject.settings.local'
+try:
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'charativeproject.settings.local'
+except:
+    pass
 
 if __name__ == "__main__":
 
