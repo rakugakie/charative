@@ -78,6 +78,11 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 
+
+DATABASES = {
+    'default': env.db(), # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
+}
+
 LOGIN_REDIRECT_URL = '/index/'
 LOGOUT_REDIRECT_URL = '/index/'
 
