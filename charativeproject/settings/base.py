@@ -54,6 +54,8 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'allauth',
+    'allauth.account',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -93,7 +95,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'charativeproject.wsgi.application'
 
-
+SITE_ID = 1
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
