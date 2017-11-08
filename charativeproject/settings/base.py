@@ -17,7 +17,6 @@ ROOT_DIR = environ.Path(__file__) - 3
 
 env = environ.Env(DEBUG=(bool, False),)
 
-
 READ_DOT_ENV_FILE = env.bool('DJANGO_READ_DOT_ENV_FILE', default=True)
 
 if READ_DOT_ENV_FILE:
@@ -34,11 +33,8 @@ if READ_DOT_ENV_FILE:
 
 BASE_DIR = ROOT_DIR()
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -48,7 +44,6 @@ ALLOWED_HOSTS = [
     'charative.herokuapp.com',
     '127.0.0.1',
 ]
-
 
 # Application definition
 
