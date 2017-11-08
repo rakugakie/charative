@@ -55,10 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'charative',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'charative',
 ]
 
 MIDDLEWARE = [
@@ -86,8 +86,7 @@ ROOT_URLCONF = 'charativeproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/charative/')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

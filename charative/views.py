@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from charative.models import Chara
 from django.shortcuts import redirect
-# Create your views here.
 
 
 def index(request):
