@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index, name='index'),
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^',  views.indexredirect, name='indexredirect'),
+    url(r'^edituser/', views.edituser, name='edituser'),
+    #url(r'^',  views.indexredirect, name='indexredirect'),
 ]

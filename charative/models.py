@@ -37,7 +37,7 @@ class Profile(Modifiable):
     genre = models.ManyToManyField(Genre)
     romance_interest = models.IntegerField(default=0)
     romance_type = models.ManyToManyField(RomanceType)
-
+    gender = models.IntegerField(default=0)
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

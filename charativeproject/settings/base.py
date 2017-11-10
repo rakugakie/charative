@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -107,6 +108,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'charativeproject.wsgi.application'
 
 SITE_ID = 1
+ACCOUNT_EMAIL_REQUIRED = True
 
 USE_TX = True
 
@@ -164,6 +166,5 @@ STATICFILES_FINDERS = [
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = str(ROOT_DIR.path('media'))
-
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
