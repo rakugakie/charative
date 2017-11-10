@@ -108,6 +108,8 @@ WSGI_APPLICATION = 'charativeproject.wsgi.application'
 
 SITE_ID = 1
 
+USE_TX = True
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
@@ -162,3 +164,6 @@ STATICFILES_FINDERS = [
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = str(ROOT_DIR.path('media'))
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

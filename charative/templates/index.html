@@ -7,7 +7,14 @@
 </head>
 <body>
     <h5>Konnichiha!</h5>
-    Hello, starshine! The world says hello!
+    Hello,
+    {% if request.user.is_authenticated %}
+       {{ request.user.username }}
+    {% else %}
+
+    starshine
+
+    {% endif%}! The world says hello!
     {% if poop.picture %}
         <p> Site Owner's face: <img src="{{ poop.picture.url }}"> </p>
     {% else %}
